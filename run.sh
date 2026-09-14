@@ -1,7 +1,28 @@
-sudo docker build -t 9llabs-static:version-1.1 -f Dockerfile .
+#!/bin/bash
 
-sudo docker ps -f name=docker-9llabs-static -q | xargs --no-run-if-empty docker container stop
+set -e
 
-sudo docker container ls -a -fname=docker-9llabs-static -q | xargs -r docker container rm
+IMAGE="9llabs-static:version-1.1"
+CONTAINER="docker-9llabs-static"
 
-sudo docker run --expose=2021 -p 2021:80 -d --name docker-9llabs-static 9llabs-static:version-1.1
+echo "==> Building Docker image..."
+sudo docker build -t "$IMAGE" -f Dockerfile .
+
+echo "==> Stopping existing container..."
+sudo docker stop "$CONTAINER" 2>/dev/null || true
+
+echo "==> Removing existing container..."
+sudo docker rm "$CONTAINER" 2>/dev/null || true
+
+echo "==> Starting new container..."
+sudo docker run \
+  --expose=2021 \
+  -p 2021:80 \
+  -d \
+  --name "$CONTAINER" \
+  "$IMAGE"
+
+echo "==> Checking container..."
+sudo docker ps -f "name=$CONTAINER"
+
+echo "==> Deployment completed successfully!"
