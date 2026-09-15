@@ -804,7 +804,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <!-- <span class="text-secondary">Posted on : Wed Oct 11th, 2023<span><br>
+                     <span class="text-secondary">Posted on : Wed Oct 11th, 2023<span><br>
                             <span class="text-secondary">Job Removed on : Wed Oct 31th, 2023<span>
 
                                     <br>
@@ -820,17 +820,17 @@
                                     possible. Please mail resume to Ref: President, Skyline Tower 10900, Ste 4th Suite
                                     #2300,
                                     Bellevue,
-                                    WA- 98004 -->
+                                    WA- 98004 
                                 
 
-                                    <br>
+                                    <!-- <br>
                                     Web and Digital Interface Designers/Software Engineer –Multiple openings - Bellevue, WA
                                     <br><br>
                                     9LLabs LLC needs professionals:
                                     <br><br>
                                     Work using UI, SDLC, Git, AWS cloud, HTML5, CSS3, Bootstrap, CI/CD, JIRA, Postman.
                                     <br><br>
-                                    Req: Bachelor's +2 yr exp.   Wages: $143270/yr. Benefits: Health insurance, paid sick leave, and PFML. Relocate to unanticipated site. No Int’l/Nat’l travel. Send mail to: <a href="mailto:srikant@9llabs.com">President</a>, Skyline Tower 10900, NE, Ste 4th #2300, Bellevue, WA, 98004
+                                    Req: Bachelor's +2 yr exp.   Wages: $143270/yr. Benefits: Health insurance, paid sick leave, and PFML. Relocate to unanticipated site. No Int’l/Nat’l travel. Send mail to: <a href="mailto:srikant@9llabs.com">President</a>, Skyline Tower 10900, NE, Ste 4th #2300, Bellevue, WA, 98004 -->
 
                 </div>
             </div>
